@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyCreator.Cli", "LazyCreator.Cli\LazyCreator.Cli.csproj", "{582120D5-E000-4A6A-8E3B-8EE2E530DDE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyCreator.Commands", "LazyCreator.Commands\LazyCreator.Commands.csproj", "{9C382D55-F34F-4B19-8BE0-90EB9276510F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyCreator.Interpreters", "LazyCreator.Interpreters\LazyCreator.Interpreters.csproj", "{3B89BD91-80AC-4EB0-9E20-488CC02C56EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyCreator.Engine", "LazyCreator.Engine\LazyCreator.Engine.csproj", "{BBD5C12A-272A-4FC8-B60D-039AD6295AD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{582120D5-E000-4A6A-8E3B-8EE2E530DDE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{582120D5-E000-4A6A-8E3B-8EE2E530DDE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{582120D5-E000-4A6A-8E3B-8EE2E530DDE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{582120D5-E000-4A6A-8E3B-8EE2E530DDE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C382D55-F34F-4B19-8BE0-90EB9276510F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C382D55-F34F-4B19-8BE0-90EB9276510F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C382D55-F34F-4B19-8BE0-90EB9276510F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C382D55-F34F-4B19-8BE0-90EB9276510F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B89BD91-80AC-4EB0-9E20-488CC02C56EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B89BD91-80AC-4EB0-9E20-488CC02C56EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B89BD91-80AC-4EB0-9E20-488CC02C56EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B89BD91-80AC-4EB0-9E20-488CC02C56EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBD5C12A-272A-4FC8-B60D-039AD6295AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBD5C12A-272A-4FC8-B60D-039AD6295AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBD5C12A-272A-4FC8-B60D-039AD6295AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBD5C12A-272A-4FC8-B60D-039AD6295AD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
