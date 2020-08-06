@@ -4,9 +4,6 @@ namespace LazyCreator.Engine.Readers
 {
     public class ConsoleReader : IReader
     {
-        public string Read()
-        {
-            return Console.ReadLine();
-        }
+        public string Read() => Console.ReadLine();
     }
 }

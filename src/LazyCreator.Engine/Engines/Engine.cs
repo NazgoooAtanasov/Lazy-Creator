@@ -12,26 +12,21 @@ namespace LazyCreator.Engine.Engines
 
         public Engine(IWriter writer, IReader reader, IConsoleInterpreter interpreter)
         {
-            _writer = writer;
-            _reader = reader;
-            _interpreter = interpreter;
+            this._writer = writer;
+            this._reader = reader;
+            this._interpreter = interpreter;
         }
 
         public void Run()
         {
             while (true)
             {
-                _writer.Write("Command: ");
+                this._writer.Write("Command: ");
                 // Separate method!
-                var command = _reader.Read().Split(' ', StringSplitOptions.RemoveEmptyEntries).ToArray();
-                var result = _interpreter.ExecuteCommand(command);
-                _writer.Write(result);
+                var command = this._reader.Read().Split(' ', StringSplitOptions.RemoveEmptyEntries).ToArray();
+                var result = this._interpreter.ExecuteCommand(command);
+                this._writer.Write(result);
             }
-        }
-
-        public void Stop()
-        {
-            Environment.Exit(0);
         }
     }
 }

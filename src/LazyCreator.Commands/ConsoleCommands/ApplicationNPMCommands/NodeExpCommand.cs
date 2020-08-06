@@ -1,12 +1,12 @@
-namespace LazyCreator.Commands.ConsoleCommands.ApplicationDotnetCommands
+namespace LazyCreator.Commands.ConsoleCommands.ApplicationNPMCommands
 {
-    public class DotnetCommand : IDotnetCommand
+    public class NodeExpCommand : INodeExpCommand
     {
         public string Execute(string[] args)
         {
             TerminalExecutor.Run(
                 ApplicationDefaults.LinuxDefaultShell,
-                ApplicationDefaults.DotnetConsoleApplication(args));
+                ApplicationDefaults.NodeExpApplication(args));
 
             return null;
         }

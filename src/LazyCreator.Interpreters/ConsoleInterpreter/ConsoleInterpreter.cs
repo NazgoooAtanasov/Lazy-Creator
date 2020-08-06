@@ -11,7 +11,7 @@ namespace LazyCreator.Interpreters.ConsoleInterpreter
         {
             try
             {
-                return GetInstance(args).Execute(args.Skip(1).ToArray());
+                return this.GetInstance(args).Execute(args.Skip(1).ToArray());
             }
             catch (Exception exception)
             {
@@ -19,22 +19,17 @@ namespace LazyCreator.Interpreters.ConsoleInterpreter
             }
         }
 
-        public string GetCommandOutOfRawStringArray(string[] rawInput)
-        {
-            return rawInput[0];
-        }
+        public string GetCommandOutOfRawStringArray(string[] rawInput) => rawInput[0];
 
-        private Type GetCommandType(string commandName)
-        {
-            return Assembly.Load("LazyCreator.Commands").GetTypes()
+        private Type GetCommandType(string commandName) =>
+            Assembly.Load("LazyCreator.Commands").GetTypes()
                 .Where(x => x.Name.ToLower() == commandName.ToLower() + "command")
                 .ToList()[0];
-        }
 
         private ICommand GetInstance(string[] input)
         {
-            var commandName = GetCommandOutOfRawStringArray(input);
-            var commandType = GetCommandType(commandName);
+            var commandName = this.GetCommandOutOfRawStringArray(input);
+            var commandType = this.GetCommandType(commandName);
 
             var instance = Activator.CreateInstance(commandType) as ICommand;
             return instance;
