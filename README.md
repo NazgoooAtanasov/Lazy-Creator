@@ -10,8 +10,8 @@
 ### **Working technologies:**
 
 * [x] .Net Core Console Application
-* [ ] ASP.NET Core MVC Application (WIP)
-* [ ] ASP.NET Core API Application (WIP)
+* [x] ASP.NET Core MVC Application
+* [x] ASP.NET Core API Application
 * [x] Nodejs and Expressjs
 * [x] Symfony
 * [ ] Laravel (WIP)
@@ -22,7 +22,7 @@
 
 ### **Prerequisites:**
 
-#### .Net Core Console Application:
+#### .Net Core Applications:
     .Net Core 3.1 - https://dotnet.microsoft.com/download
 
 #### Nodejs and Expressjs Application:
@@ -40,7 +40,13 @@
 By far every single command is in the same format.
 
 #### For .Net Core Console Application:
-    dotnet {the/directory/of/the/project}
+    console {the/directory/of/the/project}
+
+#### For .Net Core Web Application:
+    webapp {the/directory/of/the/project}
+
+#### For .Net Core Web Api:
+    webapi {the/directory/of/the/project}
 
 #### For Nodejs and Expressjs Application:
     nodeexp {the/directory/of/the/project}

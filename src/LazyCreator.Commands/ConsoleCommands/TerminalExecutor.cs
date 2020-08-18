@@ -9,8 +9,7 @@ namespace LazyCreator.Commands.ConsoleCommands
             var projectCreationInfo =
                 new ProcessStartInfo(
                     program,
-                    command
-                );
+                    command);
             var projectCreationProcess = Process.Start(projectCreationInfo);
             projectCreationProcess.WaitForExit();
         }
