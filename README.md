@@ -15,7 +15,6 @@
 * [x] Nodejs and Expressjs
 * [x] Symfony
 * [ ] Laravel (WIP)
-* [ ] Deno (WIP)
 * [ ] Reactjs (WIP)
 * [ ] Angular (WIP)
 
