@@ -7,7 +7,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\LazyCreator.Commands\LazyCreator.Commands.csproj" />
-      <ProjectReference Include="..\LazyCreator.Engine\LazyCreator.Engine.csproj" />
+      <ProjectReference Include="..\LazyCreator.Engine\LazyCreator.Engines.csproj" />
       <ProjectReference Include="..\LazyCreator.Interpreters\LazyCreator.Interpreters.csproj" />
     </ItemGroup>
 

@@ -1,6 +1,6 @@
 using System;
 
-namespace LazyCreator.Engine.Readers
+namespace LazyCreator.Engines.Readers
 {
     public class ConsoleReader : IReader
     {

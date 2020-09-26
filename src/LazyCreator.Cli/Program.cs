@@ -1,4 +1,6 @@
-﻿namespace LazyCreator.Cli
+﻿using LazyCreator.Engines.Engines;
+
+namespace LazyCreator.Cli
 {
     public static class Program
     {
@@ -6,7 +8,7 @@
         {
             var container = StartUp.ConfigureServices();
 
-            var engine = container.GetInstance<Engine.Engines.Engine>();
+            var engine = container.GetInstance<ConsoleEngine>();
 
             engine.Run();
         }

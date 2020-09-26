@@ -5,7 +5,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="ConsoleCommands\TerminalExecutor" />
+      <Compile Remove="ConsoleCommands\TerminalExecutor\**" />
+      <EmbeddedResource Remove="ConsoleCommands\TerminalExecutor\**" />
+      <None Remove="ConsoleCommands\TerminalExecutor\**" />
     </ItemGroup>
 
 </Project>

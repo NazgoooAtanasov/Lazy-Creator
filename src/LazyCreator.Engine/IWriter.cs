@@ -1,4 +1,4 @@
-namespace LazyCreator.Engine
+namespace LazyCreator.Engines
 {
     public interface IWriter
     {

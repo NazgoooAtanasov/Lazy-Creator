@@ -5,7 +5,7 @@ using LazyCreator.Commands;
 
 namespace LazyCreator.Interpreters.ConsoleInterpreter
 {
-    public class ConsoleInterpreter : IConsoleInterpreter
+    public class Interpreter : IInterpreter
     {
         public string ExecuteCommand(string[] args)
         {
@@ -21,10 +21,11 @@ namespace LazyCreator.Interpreters.ConsoleInterpreter
 
         public string GetCommandOutOfRawStringArray(string[] rawInput) => rawInput[0];
 
-        private Type GetCommandType(string commandName) =>
-            Assembly.Load("LazyCreator.Commands").GetTypes()
-                .Where(x => x.Name.ToLower() == commandName.ToLower() + "command")
-                .ToList()[0];
+        private Type GetCommandType(string commandName)
+            => Assembly.Load("LazyCreator.Commands").GetTypes()
+            .Where(x => x.Name.ToLower() == commandName.ToLower() + "command")
+            .ToList()[0];
+            
 
         private ICommand GetInstance(string[] input)
         {

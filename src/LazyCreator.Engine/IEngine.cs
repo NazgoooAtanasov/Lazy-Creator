@@ -1,7 +1,7 @@
-namespace LazyCreator.Engine
+namespace LazyCreator.Engines
 {
     public interface IEngine
     {
-        public void Run();
+        public void Run(params string[]? arguments);
     }
 }

@@ -1,22 +1,39 @@
+using System.Linq;
+
 namespace LazyCreator.Commands.ConsoleCommands
 {
     public static class ApplicationDefaults
     {
-        public const string LinuxDefaultShell = "/bin/bash";
+        public const string WindowsDefaultCommandLineProgram = "powershell.exe";
 
-        public static string DotnetConsoleApplication(string[] args) =>
-            $"-c \"mkdir {args[0]};cd {args[0]};dotnet new console;dotnet new sln;dotnet sln add *.csproj\"";
-        
-        public static string DotnetWebApplication(string[] args) =>
-            $"-c \"mkdir {args[0]};cd {args[0]};dotnet new webapp;dotnet new sln;dotnet sln add *.csproj\"";
-        
-        public static string DotnetWebApi(string[] args) =>
-            $"-c \"mkdir {args[0]};cd {args[0]};dotnet new webapi;dotnet new sln;dotnet sln add *.csproj\"";
+        private static string GetFileName(string[] path)
+        {
+            var argsSplit = path[0].Split('/').ToArray();
+            return argsSplit[argsSplit.Length - 1];
+        }
+
+        public static string DotnetConsoleApplication(string[] args)
+        {
+            var file = GetFileName(args);
+            return $"/C mkdir {args[0]};cd {args[0]};dotnet new console;dotnet new sln;dotnet sln add {args[0]}/{file}.csproj";
+        }
+
+        public static string DotnetWebApplication(string[] args)
+        {
+            var file = GetFileName(args);
+            return $"/C mkdir {args[0]};cd {args[0]};dotnet new webapp;dotnet new sln; dotnet sln add {args[0]}/{file}.csproj";
+        }
+
+        public static string DotnetWebApi(string[] args)
+        {
+            var file = GetFileName(args);
+            return $"/C mkdir {args[0]};cd {args[0]};dotnet new webapi;dotnet new sln;dotnet sln add {args[0]}/{file}.csproj";
+        }
 
         public static string NodeExpApplication(string[] args) =>
-            $"-c \"mkdir {args[0]};cd {args[0]};npm init;npm install express;touch index.js \"";
+            $"/C mkdir {args[0]};cd {args[0]};npm init;npm install express;echo $null >> index.js ";
 
         public static string SymfonyApplication(string[] args) =>
-            $"-c \"symfony new --dir {args[0]}\"";
+            $"/C symfony new --dir {args[0]}";
     }
 }

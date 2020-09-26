@@ -6,7 +6,7 @@ namespace LazyCreator.Commands.ConsoleCommands.ApplicationDotnetCommands
         public string Execute(string[] args)
         {
             TerminalExecutor.Run(
-                ApplicationDefaults.LinuxDefaultShell,
+                ApplicationDefaults.WindowsDefaultCommandLineProgram,
                 ApplicationDefaults.DotnetWebApi(args));
             return null;
         }

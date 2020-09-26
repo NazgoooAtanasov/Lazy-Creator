@@ -1,6 +1,8 @@
-using LazyCreator.Engine;
-using LazyCreator.Engine.Readers;
-using LazyCreator.Engine.Writers;
+using LazyCreator.Engines;
+using LazyCreator.Engines.Engines;
+using LazyCreator.Engines.Readers;
+using LazyCreator.Engines.Writers;
+using LazyCreator.Interpreters;
 using LazyCreator.Interpreters.ConsoleInterpreter;
 using SimpleInjector;
 
@@ -16,8 +18,8 @@ namespace LazyCreator.Cli
 
             _container.Register<IWriter, ConsoleWriter>();
             _container.Register<IReader, ConsoleReader>();
-            _container.Register<IConsoleInterpreter, ConsoleInterpreter>();
-            _container.Register<Engine.Engines.Engine>();
+            _container.Register<IInterpreter, Interpreter>();
+            _container.Register<ConsoleEngine>();
             _container.Verify();
 
             return _container;

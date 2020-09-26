@@ -5,7 +5,7 @@ namespace LazyCreator.Commands.ConsoleCommands.ApplicationPHPCommands
         public string Execute(string[] args)
         {
             TerminalExecutor.Run(
-                ApplicationDefaults.LinuxDefaultShell,
+                ApplicationDefaults.WindowsDefaultCommandLineProgram,
                 ApplicationDefaults.SymfonyApplication(args)
             );
 

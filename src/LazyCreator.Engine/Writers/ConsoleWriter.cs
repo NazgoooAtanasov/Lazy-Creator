@@ -1,6 +1,6 @@
 using System;
 
-namespace LazyCreator.Engine.Writers
+namespace LazyCreator.Engines.Writers
 {
     public class ConsoleWriter : IWriter
     {

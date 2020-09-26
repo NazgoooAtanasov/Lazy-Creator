@@ -5,7 +5,7 @@ namespace LazyCreator.Commands.ConsoleCommands.ApplicationNPMCommands
         public string Execute(string[] args)
         {
             TerminalExecutor.Run(
-                ApplicationDefaults.LinuxDefaultShell,
+                ApplicationDefaults.WindowsDefaultCommandLineProgram,
                 ApplicationDefaults.NodeExpApplication(args));
 
             return null;

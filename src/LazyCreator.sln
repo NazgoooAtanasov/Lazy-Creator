@@ -1,12 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyCreator.Cli", "LazyCreator.Cli\LazyCreator.Cli.csproj", "{582120D5-E000-4A6A-8E3B-8EE2E530DDE1}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LazyCreator.Cli", "LazyCreator.Cli\LazyCreator.Cli.csproj", "{582120D5-E000-4A6A-8E3B-8EE2E530DDE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyCreator.Commands", "LazyCreator.Commands\LazyCreator.Commands.csproj", "{9C382D55-F34F-4B19-8BE0-90EB9276510F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LazyCreator.Commands", "LazyCreator.Commands\LazyCreator.Commands.csproj", "{9C382D55-F34F-4B19-8BE0-90EB9276510F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyCreator.Interpreters", "LazyCreator.Interpreters\LazyCreator.Interpreters.csproj", "{3B89BD91-80AC-4EB0-9E20-488CC02C56EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LazyCreator.Interpreters", "LazyCreator.Interpreters\LazyCreator.Interpreters.csproj", "{3B89BD91-80AC-4EB0-9E20-488CC02C56EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyCreator.Engine", "LazyCreator.Engine\LazyCreator.Engine.csproj", "{BBD5C12A-272A-4FC8-B60D-039AD6295AD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LazyCreator.Engines", "LazyCreator.Engine\LazyCreator.Engines.csproj", "{BBD5C12A-272A-4FC8-B60D-039AD6295AD3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LazyCreator.Desktop", "LazyCreator.Desktop\LazyCreator.Desktop.csproj", "{D0BB6075-40BB-43DA-9E78-F09E0512C31A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +35,15 @@ Global
 		{BBD5C12A-272A-4FC8-B60D-039AD6295AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBD5C12A-272A-4FC8-B60D-039AD6295AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBD5C12A-272A-4FC8-B60D-039AD6295AD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0BB6075-40BB-43DA-9E78-F09E0512C31A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0BB6075-40BB-43DA-9E78-F09E0512C31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0BB6075-40BB-43DA-9E78-F09E0512C31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0BB6075-40BB-43DA-9E78-F09E0512C31A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B60C53A-0009-4F20-AED7-27C7D221F2F7}
 	EndGlobalSection
 EndGlobal
